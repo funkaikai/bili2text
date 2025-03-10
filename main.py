@@ -6,8 +6,7 @@ from speech2text import *
 
 av = input("请输入BV号：")
 filename = download_video(av[2:])
-foldername = run_split(filename)
-
+#foldername = run_split(filename)
 
 load_whisper("small")
 run_analysis(foldername, prompt="以下是普通话的句子。")
