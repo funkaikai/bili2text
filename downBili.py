@@ -21,7 +21,7 @@ def download_video(bv_number):
         meta_url = f"https://bili.zhouql.vip/meta/{bv_number}"
         meta_response = requests.get(meta_url)
         meta_data = meta_response.json()
-        if meta_data.get("code") != 0:
+        if meta_data.get("code") != 0:==
             print("元数据请求失败:", meta_data.get("message"))
             return
         cid = meta_data["data"]["cid"]
